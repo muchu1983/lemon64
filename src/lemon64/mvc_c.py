@@ -1,3 +1,5 @@
+from lemon64.mvc_m import Model
+
 class Controller:
 	
 	def __init__(self):
