@@ -45,6 +45,7 @@ class ListScreen(Screen):
 		myself_name_static = self.query_one("#myself", PersonStatic)
 		persno_name_label = self.query_one("#person-name-label", Label)
 		persno_name_label.update(myself_name_static.person_name)
+		pass #TODO 以上须修改为从model读取myself资料并显示
 		
 	def compose(self) -> ComposeResult:
 		self.add_class("list-screen")
